@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Contagem de Vogais</title>
+</head>
+<body>
+  <h1>Contagem de Vogais</h1>
+  <input type="text" id="inputString" placeholder="Digite" />
+  <button onclick="countAndDisplayVowels()">Contar Vogais</button>
+  <p id="result">O número de vogais na string é: </p>
+
+  <script src="script.js"></script>
+  <script>
+    function countAndDisplayVowels() {
+      var inputElement = document.getElementById("inputString");
+      var resultElement = document.getElementById("result");
+
+      var inputString = inputElement.value;
+      var vowelCount = countVowels(inputString);
+
+      resultElement.textContent = "O número de vogais na string é: " + vowelCount;
+    }
+  </script>
+</body>
+</html>
